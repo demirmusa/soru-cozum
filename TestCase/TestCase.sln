@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Soru1", "Soru1", "{A2277242-0FB6-4DE9-9BBB-D532BA4B8111}"
+ProjectSection(SolutionItems) = preProject
+	Soru1\README.md = Soru1\README.md
+EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru1.ConsoleApp", "Soru1\Soru1.ConsoleApp\Soru1.ConsoleApp.csproj", "{0FC4B953-51FF-4748-A40E-C9BF04B50DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru1", "Soru1\Soru1\Soru1.csproj", "{D815B644-4DCE-4457-B7BB-1E4E0DC87292}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Soru1.Tests", "Soru1\Soru1.Tests\Soru1.Tests.csproj", "{31B0343D-D5A6-4739-9BB7-22CEC7FB9783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FC4B953-51FF-4748-A40E-C9BF04B50DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC4B953-51FF-4748-A40E-C9BF04B50DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC4B953-51FF-4748-A40E-C9BF04B50DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC4B953-51FF-4748-A40E-C9BF04B50DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D815B644-4DCE-4457-B7BB-1E4E0DC87292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D815B644-4DCE-4457-B7BB-1E4E0DC87292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D815B644-4DCE-4457-B7BB-1E4E0DC87292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D815B644-4DCE-4457-B7BB-1E4E0DC87292}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B0343D-D5A6-4739-9BB7-22CEC7FB9783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B0343D-D5A6-4739-9BB7-22CEC7FB9783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B0343D-D5A6-4739-9BB7-22CEC7FB9783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B0343D-D5A6-4739-9BB7-22CEC7FB9783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0FC4B953-51FF-4748-A40E-C9BF04B50DEF} = {A2277242-0FB6-4DE9-9BBB-D532BA4B8111}
+		{D815B644-4DCE-4457-B7BB-1E4E0DC87292} = {A2277242-0FB6-4DE9-9BBB-D532BA4B8111}
+		{31B0343D-D5A6-4739-9BB7-22CEC7FB9783} = {A2277242-0FB6-4DE9-9BBB-D532BA4B8111}
+	EndGlobalSection
+EndGlobal
