@@ -1,0 +1,59 @@
+<!--Ekleme ve düzenleme modalı--->
+<ng-template #modelContent let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <label for="randevuZamani">Randevu Zamanı</label>
+        <div class="input-group">
+          <input id="randevuZamani" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker
+                 #dp="ngbDatepicker" [(ngModel)]="createOrEditRandevu.randevuZamani">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary calendar" (click)="dp.toggle()" type="button"></button>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="aciklama">Açıklama</label>
+        <input type="text" id="aciklama" name="aciklama" class="form-control"
+               [(ngModel)]="createOrEditRandevu.aciklama"/>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="modal.close('Save click')">Save</button>
+  </div>
+</ng-template>
+<!--Ekleme ve düzenleme modalı sonu--->
+
+<div class="card mt-5">
+  <div class="card-body">
+    <button class="btn btn-outline-primary float-right mb-4" (click)="open(modelContent)">Yeni Randevu Ekle</button>
+    <div class="clearfix">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>Randevu Zamanı</th>
+          <th>Açıklama</th>
+          <th style="width: 200px"></th>
+        </tr>
+        </thead>
+        <tbody *ngIf="randevular">
+        <tr *ngFor="let randevu of randevular">
+          <td>{{randevu.randevuZamani.day}}.{{ randevu.randevuZamani.month }}.{{ randevu.randevuZamani.year }}</td>
+          <td>{{randevu.aciklama}}</td>
+          <td>
+            <button class="btn btn-primary mr-3" (click)="open(modelContent,randevu)">Düzenle</button>
+            <button class="btn btn-danger" (click)="sil(randevu)">Sil</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

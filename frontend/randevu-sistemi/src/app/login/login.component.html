@@ -1,0 +1,36 @@
+<div class="col-md-6 offset-md-3 mt-5">
+  <div class="alert alert-info">
+    <div class="text-center" style="font-weight: bold">Test Kullanıcıları</div>
+    <br>
+    KullanıcıAdı: admin<br/>
+    Şifre: 123qwe
+    <hr/>
+    KullanıcıAdı: user1<br/>
+    Şifre: 123qwe
+    <hr/>
+    KullanıcıAdı: user2<br/>
+    Şifre: 123qwe
+  </div>
+  <div class="card">
+    <h4 class="card-header">Randevu sistemi Giriş</h4>
+    <div class="card-body">
+      <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" class="form-control" [(ngModel)]="username"
+                 required="required"/>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" [(ngModel)]="password"
+                 required="required"/>
+        </div>
+        <button [disabled]="loading || loginForm?.invalid" class="btn btn-primary">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          Login
+        </button>
+        <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+      </form>
+    </div>
+  </div>
+</div>
