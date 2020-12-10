@@ -8,7 +8,7 @@
 
 **Çözüm açıklaması:**
 
-Bir string değerinin diğerinin herhangi bir kombinasyonunu içerebilmesi için şu şarta uyması gerekmektedir
+Bir string değerinin diğer bir stringin herhangi bir kombinasyonunu içerebilmesi için şu şarta uyması gerekmektedir
 
 * Kaynak string aranılan stringde bulunan tüm karakterleri en az aranılan stringdeki sayısı kadar içermelidir.
 
