@@ -42,5 +42,5 @@ Sorunun çözümüne bu şekilde yaklaşırsak. Verilen stringleri karakterlerin
 
 # Hiyerarşi
 **Soru1:** İmplementasyonun bulunduğu proje  
-**Soru1.Tests:** ilgili testlerin bulunduğu proje  
+**Soru1.Tests:** İlgili testlerin bulunduğu proje  
 **Soru1.ConsoleApp:** Deneme yapabileceğiniz console uygulaması
