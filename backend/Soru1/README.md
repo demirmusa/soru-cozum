@@ -39,3 +39,8 @@ Bir string değerinin diğerinin herhangi bir kombinasyonunu içerebilmesi için
 
 
 Sorunun çözümüne bu şekilde yaklaşırsak. Verilen stringleri karakterlerine göre gruplayıp ardından ardından kaynak grubun aranılan gruba ait tüm karakterleri en az aranılan gruptaki karakter sayıları kadar içermesi kontrol edilecektir.
+
+### Hiyerarşi
+**Soru1:** İmplementasyonun bulunduğu proje  
+**Soru1.Tests:** ilgili testlerin bulunduğu proje  
+**Soru1.ConsoleApp:** Deneme yapabileceğiniz console uygulaması
